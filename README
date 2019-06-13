@@ -1,0 +1,7 @@
+
+This repository contains all files necessary to analysis the data. 
+The Jupyter notebooks run with Python 3.6 kernels. All additiona packages are specified in the requierments.txt
+
+data/   Raw data of sperm beat patterns
+nb/     Jupyer notebooks to analyse and generate plots
+
