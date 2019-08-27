@@ -1,7 +1,11 @@
 
 This repository contains all files necessary to analysis the data. 
-The Jupyter notebooks run with Python 3.6 kernels. All additiona packages are specified in the requierments.txt
+The Jupyter notebooks run with Python 3.6 and 3.7 kernels. All additiona packages are specified in the requierments.txt
 
 data/   Raw data of sperm beat patterns
 nb/     Jupyer notebooks to analyse and generate plots
-
+To regenrate the data of the respective species run:
+- process several human
+- process several sea
+And finally regenerate the plots via:
+- Spectogram
