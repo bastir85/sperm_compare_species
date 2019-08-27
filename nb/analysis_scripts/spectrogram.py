@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Modified: 29.6.15
+Modified: 27.08.1
 
 @author: Guglielmo Saggiorato <g.saggiorato@fz-juelich.de> or <astyonax@gmail.com>
+@author: Sebastian Rode - python3 update
 """
 
 import numpy as np
@@ -14,13 +15,11 @@ def windfft(x,window=signal.blackmanharris):
     return np.fft.rfft(x*M)/M.sum()*2
 
 def wind(x,NFFT,noverlap=0):
-
     for j in range(0,len(x),NFFT-noverlap):
         if NFFT+j<len(x):
             yield x[j:NFFT+j]
         else:
-            raise StopIteration
-
+            return
 
 def spectrogram2(x,NFFT,Fs,window=signal.blackmanharris,noverlap=0,identify_peaks=False):
     spectrogram=[]
