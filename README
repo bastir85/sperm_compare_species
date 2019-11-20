@@ -1,11 +1,18 @@
+Supplementary Information for the article An Gong et al. The steering gaits of sperm. Phil. Trans. R. Soc. B 2019
 
-This repository contains all files necessary to analysis the data. 
-The Jupyter notebooks run with Python 3.6 and 3.7 kernels. All additiona packages are specified in the requierments.txt
+This repository contains the scripts and tracking data to analyse the flagellar beat of human and sea urchin sperm:
+
+The Jupyter notebooks run with Python 3.6 and 3.7 kernels. All additional packages are specified in the requierments.txt
 
 data/   Raw data of sperm beat patterns
-nb/     Jupyer notebooks to analyse and generate plots
-To regenrate the data of the respective species run:
+nb/     Jupyter notebooks to analyse and generate plots
+
+To regenerate the data of the respective species run:
 - process several human
 - process several sea
+
 And finally regenerate the plots via:
-- Spectogram
+- Spectrogram
+
+Numerical calculation of the rotation velocity of head-less sperm with different harmonic contributions is done with the MATLAB software SolvingEquations.m
+
